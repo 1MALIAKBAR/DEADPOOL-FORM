@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What do you know about Deadpool</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@300&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1c1c1c;
+            color: #fff;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            background-color: #000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav img {
+            width: 100px;
+        }
+
+        .feedback-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+        }
+
+        .feedback-section h1 {
+            font-family: 'Bangers', cursive;
+            font-size: 3rem;
+            color: #f00;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .feedback-section p {
+            font-family: 'Permanent Marker', cursive;
+            font-size: 1.5rem;
+            color: #ccc;
+            margin-bottom: 40px;
+        }
+
+        .feedback-form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 600px;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #f00;
+        }
+
+        .feedback-form label {
+            font-size: 1.2rem;
+            color: #f00;
+            margin-bottom: 10px;
+        }
+
+        .feedback-form input, .feedback-form textarea {
+            background-color: #444;
+            color: #fff;
+            border: 1px solid #777;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .feedback-form input::placeholder, .feedback-form textarea::placeholder {
+            color: #999;
+        }
+
+        .feedback-form button {
+            background-color: #f00;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Permanent Marker', cursive;
+        }
+
+        footer {
+            background-color: #202020;
+            padding: 10px;
+            text-align: center;
+            color: #f00;
+            font-family: 'Permanent Marker', cursive;
+        }
+
+        footer marquee {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="" alt="Deadpool Logo" id="logo">
+        </nav>
+    </header>
+
+    <main>
+        <section class="feedback-section">
+            <h1>I love to hear from you</h1>
+            <p>Let us know what you think about Deadpool. Fill out the form below:</p>
+            <form action="#" method="POST" class="feedback-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <marquee>&copy; Ali Akbar - Stay Sassy!</marquee>
+    </footer>
+</body>
+
+</html>
